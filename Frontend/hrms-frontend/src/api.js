@@ -10,21 +10,28 @@ export const API = axios.create({
   baseURL: "https://hrms-backend-6d6q.onrender.com" */}
 {/* }); */}
 
+// import axios from 'axios';
+
+// const API = axios.create({
+//   baseURL: "https://hrms-backend-6d6q.onrender.com",
+// });
+
+// export default {
+//   methods: {
+//     async fetchData() {
+//       try {
+//         const response = await API.get('/data');
+//         console.log(response.data);
+//       } catch (error) {
+//         console.error('Error fetching data:', error);
+//       }
+//     }
+//   }
+// }
 import axios from 'axios';
 
 const API = axios.create({
   baseURL: "https://hrms-backend-6d6q.onrender.com",
 });
 
-export default {
-  methods: {
-    async fetchData() {
-      try {
-        const response = await API.get('/data');
-        console.log(response.data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    }
-  }
-}
+export default API; // export the instance directly
