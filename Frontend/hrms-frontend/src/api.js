@@ -28,10 +28,10 @@ export const API = axios.create({
 //     }
 //   }
 // }
-import axios from 'axios';
+import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://hrms-backend-6d6q.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
-export default API; // export the instance directly
+export default API;
