@@ -4,5 +4,5 @@ import axios from "axios"
 //     baseURL : "http://127.0.0.1:8000/",
 // });
 export const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL 
+  baseURL: "https://hrms-backend-6d6q.onrender.com"
 });
